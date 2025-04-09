@@ -1,0 +1,68 @@
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-box > .label {
+  color: var(--color-gray-600);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input-box > .input-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-box .input-area {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.input-box input {
+  flex: 1 1 auto;
+  min-width: 0;
+  outline: none;
+
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid var(--color-gray-300);
+  padding: 10px;
+  height: 44px;
+
+  color: var(--color-black);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 175%;
+}
+
+.input-box input::placeholder {
+  color: var(--color-gray-400);
+}
+
+.input-box .button {
+  width: 110px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.input-box .message {
+  height: 16px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.input-box .message.success {
+  color: var(--color-primary-dark);
+}
+
+.input-box .message.error {
+  color: var(--color-error);
+}

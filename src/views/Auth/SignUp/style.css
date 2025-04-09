@@ -1,0 +1,60 @@
+#auth-sign-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 410px;
+  gap: 10px;
+}
+
+#auth-sign-up-container .header-container {
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+#auth-sign-up-container .header-container .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 175%;
+  color: var(--color-black);
+}
+
+#auth-sign-up-container .header-container .description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 175%;
+  color: var(--color-gray-500);
+}
+
+#auth-sign-up-container .input-container {
+  align-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8px;
+  gap: 8px;
+}
+
+#auth-sign-up-container .button-container {
+  align-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#auth-sign-up-container .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+  color: var(--color-gray-500);
+
+  gap: 5px;
+}

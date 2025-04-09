@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('./assets/fonts/NotoSansKR-VariableFont_wght.ttf') format('woff2');
+  unicode-range: U+AC00-D7A3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'HanaMinA';
+  src: url('./assets/fonts/HanaMinA.ttf') format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'HanaMinB';
+  src: url('./assets/fonts/HanaMinB.ttf') format('truetype');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+:root {
+  /* Primary Theme Colors */
+  --color-primary: #4e6cff;
+  --color-primary-dark: #3d58cc;
+  --color-primary-light: #e6ecff;
+
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e0e0e0;
+  --color-gray-300: #c0c0c0;
+  --color-gray-400: #a0a0a0;
+  --color-gray-500: #606060;
+  --color-gray-600: #404040;
+  --color-gray-700: #202020;
+  --color-gray-800: #101010;
+
+  /* Status Colors */
+  --color-success: #22c55e;
+  --color-warning: #facc15;
+  --color-error: #ef4444;
+
+  /* Text Colors */
+  --color-text: #1f1f1f;
+  --color-subtext: #606060;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.hanamin {
+  font-family: 'HanaMinA', 'HanaMinB', sans-serif;
+}
+
+.button {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+  border-radius: 6px;
+  width: 92px;
+  height: 44px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 175%;
+
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  opacity: 0.85;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button.fullwidth {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.button.middle {
+  box-sizing: border-box;
+  width: 144px;
+}
+
+.button.disable {
+  background-color: var(--color-gray-200);
+
+  color: var(--color-gray-500);
+
+  cursor: default;
+}
+
+.button.disable:hover {
+  opacity: 1;
+}
+
+.button.second {
+  background-color: var(--color-black);
+
+  color: var(--color-white);
+}
+
+.button.primary {
+  background-color: var(--color-black);
+
+  color: var(--color-white);
+}
+
+.button.error {
+  background-color: var(--color-error);
+
+  color: var(--color-white);
+}
+
+.link {
+  color: var(--color-gray-600);
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--color-gray-700);
+  font-weight: 600;
 }
